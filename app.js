@@ -7,7 +7,22 @@
 // }
 // console.log('hey its my first node app.');
 
-console.log(__dirname)
-setInterval(()=>{
-    console.log('hello world')
-}, 3)
+// console.log(__dirname)
+// setInterval(()=>{
+//     console.log('hello world')
+// }, 300)
+
+JavaScript
+function reverseString(str) {
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
+const originalString = "Hello, world!";
+const reversedString = reverseString(originalString);
+
+console.log("Original:", originalString);
+console.log("Reversed:", reversedString); // !dlrow ,olleH
