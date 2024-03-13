@@ -5,4 +5,4 @@ if(amount < 10){
 }else{
     console.log('large number');
 }
-console.log();
+console.log('hey its my first node app.');
