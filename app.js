@@ -1,39 +1,8 @@
-// const amount = 12
+const os = require('os');
 
-// if(amount < 10){
-//     console.log('small number');
-// }else{
-//     console.log('large number');
-// }
-// console.log('hey its my first node app.');
+//info abou cuurent user
+const user = os.userInfo()
+console.log(user);
 
-// console.log(__dirname)
-// setInterval(()=>{
-//     console.log('hello world')
-// }, 300)
-
-// JavaScript
-// function reverseString(str) {
-//   let reversed = "";
-//   for (let i = str.length - 1; i >= 0; i--) {
-//     reversed += str[i];
-//   }
-//   return reversed;
-// }
-
-// const originalString = "Hello, world!";
-// const reversedString = reverseString(originalString);
-
-// console.log("Original:", originalString);
-// console.log("Reversed:", reversedString); // !dlrow ,olleH
-
-
-const names = require('./4-names')
-const sayHi = require('./5-utils')
-const data = require('./6-alternative')
-require('./7-mind-grenade')
-
-// sayHi('susan')
-// sayHi(names.john)
-// sayHi(names.peter)
-
+//method returns the system uptime in seconds
+console.log(`The system Uptime is ${os.uptime()} seconds`)
